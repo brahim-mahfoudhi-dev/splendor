@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<fx:root focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="999" prefWidth="1920.0" stylesheets="@../css/Borderpane.css" type="BorderPane" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <GridPane fx:id="gridCards" gridLinesVisible="true" prefHeight="802.0" prefWidth="884.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+            <ColumnConstraints fillWidth="false" hgrow="SOMETIMES" maxWidth="250.0" minWidth="10.0" prefWidth="386.0" />
+          <ColumnConstraints fillWidth="false" hgrow="SOMETIMES" maxWidth="250.0" minWidth="10.0" prefWidth="386.0" />
+          <ColumnConstraints fillWidth="false" hgrow="SOMETIMES" maxWidth="250.0" minWidth="10.0" prefWidth="385.0" />
+            <ColumnConstraints fillWidth="false" hgrow="SOMETIMES" maxWidth="250.0" minWidth="10.0" prefWidth="386.0" />
+            <ColumnConstraints fillWidth="false" hgrow="SOMETIMES" maxWidth="250.0" minWidth="10.0" prefWidth="386.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="310.0" minHeight="100.0" prefHeight="0.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="300.0" minHeight="100.0" prefHeight="0.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="300.0" minHeight="100.0" prefHeight="0.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ImageView fx:id="lvl3Downside" fitHeight="255.0" fitWidth="182.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+            <ImageView fx:id="lvl3Kaart1" fitHeight="255.0" fitWidth="182.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+            <ImageView fx:id="lvl3Kaart2" fitHeight="255.0" fitWidth="182.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+            <ImageView fx:id="lvl3Kaart3" fitHeight="255.0" fitWidth="182.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+            <ImageView fx:id="lvl3Kaart4" fitHeight="255.0" fitWidth="182.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+            <ImageView fx:id="lvl2Downside" fitHeight="255.0" fitWidth="182.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+            <ImageView fx:id="lvl2Kaart1" fitHeight="255.0" fitWidth="182.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+            <ImageView fx:id="lvl2Kaart2" fitHeight="255.0" fitWidth="182.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+            <ImageView fx:id="lvl2Kaart3" fitHeight="255.0" fitWidth="182.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+            <ImageView fx:id="lvl2Kaart4" fitHeight="255.0" fitWidth="182.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+            <ImageView fx:id="lvl1Downside" fitHeight="255.0" fitWidth="182.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+            <ImageView fx:id="lvl1Kaart1" fitHeight="255.0" fitWidth="182.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+            <ImageView fx:id="lvl1Kaart2" fitHeight="255.0" fitWidth="182.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+            <ImageView fx:id="lvl1Kaart3" fitHeight="255.0" fitWidth="182.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+            <ImageView fx:id="lvl1Kaart4" fitHeight="255.0" fitWidth="182.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+            <Label id="#fancytext" fx:id="aantalNiveau3" blendMode="SRC_ATOP" stylesheets="@../css/LabelDownsideCards.css" text="Label" textAlignment="CENTER" textFill="WHITE">
+               <GridPane.margin>
+                  <Insets left="80.0" top="110.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="System Bold" size="38.0" />
+               </font>
+            </Label>
+            <Label id="#fancytext" fx:id="aantalNiveau2" blendMode="SRC_ATOP" stylesheets="@../css/LabelDownsideCards.css" text="Label" textAlignment="CENTER" textFill="WHITE" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="80.0" top="110.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="System Bold" size="38.0" />
+               </font>
+            </Label>
+            <Label id="#fancytext" fx:id="aantalNiveau1" blendMode="SRC_ATOP" stylesheets="@../css/LabelDownsideCards.css" text="Label" textAlignment="CENTER" textFill="WHITE" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets left="80.0" top="110.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="System Bold" size="38.0" />
+               </font>
+            </Label>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="10.0" />
+         </BorderPane.margin>
+      </GridPane>
+   </center>
+   <left>
+      <GridPane fx:id="gridEdelsteen" maxHeight="1.7976931348623157E308" prefHeight="802.0" prefWidth="262.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="300.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Circle fx:id="witeSteen" fill="WHITE" radius="60.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="3.0" style="-fx-cursor: hand;" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <effect>
+                  <DropShadow />
+               </effect></Circle>
+            <Circle fx:id="blackSteen" radius="60.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="3.0" style="-fx-cursor: hand;" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+               <effect>
+                  <DropShadow />
+               </effect></Circle>
+            <Circle fx:id="greenSteen" fill="#0fa102" radius="60.0" stroke="#0fa102" strokeType="INSIDE" strokeWidth="3.0" style="-fx-cursor: hand;" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+               <effect>
+                  <DropShadow />
+               </effect></Circle>
+            <Circle fx:id="blueSteen" fill="#2200bc" radius="60.0" stroke="#2200bc" strokeType="INSIDE" strokeWidth="3.0" style="-fx-cursor: hand;" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+               <effect>
+                  <DropShadow />
+               </effect></Circle>
+            <Circle fx:id="redSteen" fill="#ff1f1f" radius="60.0" stroke="RED" strokeType="INSIDE" strokeWidth="3.0" style="-fx-cursor: hand;" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+               <effect>
+                  <DropShadow />
+               </effect></Circle>
+            <Label fx:id="aantalWit" text="Label">
+               <GridPane.margin>
+                  <Insets bottom="20.0" left="175.0" top="140.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="aantalRood" text="Label" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="20.0" left="175.0" top="140.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="aantalBlauw" text="Label" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets bottom="20.0" left="175.0" top="140.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="aantalGroen" text="Label" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets bottom="20.0" left="175.0" top="140.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="aantalZwart" text="Label" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets bottom="20.0" left="175.0" top="140.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <Blend />
+         </effect>
+      </GridPane>
+   </left>
+   <right>
+      <VBox prefHeight="860.0" prefWidth="654.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="738.0" prefWidth="654.0">
+               <children>
+                  <ListView fx:id="lijst" prefHeight="570.0" prefWidth="634.0" stylesheets="@../css/Listview.css">
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </VBox.margin>
+                  </ListView>
+                   <Label fx:id="keuzeText" prefHeight="182.0" prefWidth="644.0" textFill="RED">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="lbLError" prefHeight="51.0" prefWidth="644.0" textFill="RED">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </VBox>
+            <HBox prefHeight="82.0" prefWidth="671.0">
+               <children>
+                  <Button id="1" fx:id="btn3Edelsteen" mnemonicParsing="false" prefHeight="50.0" prefWidth="161.0" text="Neem drie edelsteenfiches">
+                     <HBox.margin>
+                        <Insets left="15.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button id="2" fx:id="btn2Edelsteen" mnemonicParsing="false" prefHeight="50.0" prefWidth="165.0" text="Neem twee edelsteenfiches">
+                     <HBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button id="3" fx:id="btnKoopOntwikkelingskaart" mnemonicParsing="false" prefHeight="50.0" prefWidth="146.0" text="koop ontwikkelingskaart">
+                     <HBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button id="4" fx:id="btnPasBeurt" mnemonicParsing="false" prefHeight="50.0" prefWidth="106.0" text="Pas beurt">
+                     <HBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </right>
+   <top>
+      <HBox prefHeight="197.0" prefWidth="1920.0" BorderPane.alignment="CENTER">
+         <children>
+            <GridPane fx:id="gridEdele" gridLinesVisible="true" prefHeight="197.0" prefWidth="1023.0">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="250.0" minWidth="10.0" prefWidth="386.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="250.0" minWidth="10.0" prefWidth="386.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="250.0" minWidth="10.0" prefWidth="386.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="250.0" minWidth="10.0" prefWidth="386.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="250.0" minWidth="10.0" prefWidth="386.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <HBox.margin>
+                  <Insets left="262.0" top="10.0" />
+               </HBox.margin>
+               <children>
+                  <ImageView fx:id="edele1" fitHeight="170.0" fitWidth="182.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;" GridPane.halignment="CENTER" />
+                  <ImageView fx:id="edele2" fitHeight="170.0" fitWidth="182.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+                  <ImageView fx:id="edele3" fitHeight="170.0" fitWidth="182.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;" GridPane.columnIndex="2" GridPane.halignment="CENTER" />
+                  <ImageView fx:id="edele4" fitHeight="170.0" fitWidth="182.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;" GridPane.columnIndex="3" GridPane.halignment="CENTER" />
+                  <ImageView fx:id="edele5" fitHeight="170.0" fitWidth="182.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;" GridPane.columnIndex="4" GridPane.halignment="CENTER" />
+               </children>
+            </GridPane>
+            <HBox prefHeight="197.0" prefWidth="674.0">
+               <children>
+                  <Button fx:id="btnInvetory" maxWidth="500.0" mnemonicParsing="false" prefHeight="101.0" prefWidth="500.0" text="Inventory">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="70.0" top="50.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+   </top>
+</fx:root>
