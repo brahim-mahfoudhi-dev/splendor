@@ -42,7 +42,7 @@ Het eindresultaat bestaat uit:
 Elke domeinklasse is getest met behulp van JUnit.  
 Controller- en repositoryklassen zijn buiten beschouwing gelaten bij unit testing.
 
-## 🗃Tools & Technologieën
+## Tools & Technologieën
 
 - Java 17
 - JavaFX
